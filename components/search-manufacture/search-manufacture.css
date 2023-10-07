@@ -1,0 +1,17 @@
+.search-field {
+    @apply relative w-full bg-slate-100 flex p-3;
+    &__button {
+        @apply flex items-center;
+    }
+    &__input {
+        @apply bg-transparent w-60 outline-none relative;
+    }
+    &__options {
+        @apply absolute top-[50px] left-0 max-h-60 w-full overflow-auto
+        bg-white text-base shadow-lg ring-1 ring-black 
+        ring-opacity-5 focus:outline-none sm:text-sm z-10;
+    }
+    &__option {
+        @apply relative cursor-pointer select-none py-3 pl-11 pr-4;
+    }
+}

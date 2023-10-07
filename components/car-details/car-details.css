@@ -1,0 +1,36 @@
+.car-details {
+    @apply w-full z-20;
+
+    .dialog-panel {
+        @apply bg-white p-5 relative w-[360px] xl:w-[500px] rounded-lg overflow-hidden;
+
+        &__close-btn {
+            @apply absolute top-3 right-3 rounded-full bg-white shadow-lg p-1;
+        }
+    }
+    .image-container {
+        @apply bg-[url('/pattern.png')] bg-cover bg-center w-full flex items-center rounded-md mb-3 py-2 justify-center;
+    }
+
+    &__info {
+        @apply flex flex-col capitalize;
+
+        &__title {
+            @apply text-lg font-semibold text-left mb-3;
+        }
+
+        &__row {
+            @apply flex w-full text-sm py-2 px-4 justify-between;
+
+            &:nth-of-type(2n-1) {
+                @apply bg-slate-100;
+            }
+        }
+    }
+    .image-thumbs {
+        @apply flex gap-3 mb-4;
+        &__item {
+            @apply flex-1 bg-slate-50 relative w-full h-16 items-center justify-center;
+        }
+    }
+}

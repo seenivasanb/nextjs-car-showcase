@@ -1,0 +1,43 @@
+.car-card {
+    @apply p-4 bg-white drop-shadow-md;
+
+    &__header-title {
+        @apply text-lg capitalize mb-3;
+    }
+
+    &__content {
+        &__rent {
+            @apply flex mb-4;
+            .price {
+                @apply text-2xl font-bold;
+            }
+            .symbol,
+            .per {
+                @apply text-sm text-slate-500;
+            }
+            .symbol {
+                @apply self-start;
+            }
+            .per {
+                @apply self-end;
+            }
+        }
+        &__image {
+            @apply relative h-[120px] mb-2;
+        }
+    }
+
+    &__controls {
+        @apply p-5;
+    }
+
+    &__control {
+        @apply flex flex-col items-center gap-y-2 text-xs;
+    }
+
+    &__button {
+        button {
+            @apply w-full;
+        }
+    }  
+}
